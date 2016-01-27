@@ -15,6 +15,6 @@ router.post('/', textParser, function(req,res) {
   });
 });
 
-//Get Angular connected with this info somehow
-
 module.exports = router;
+
+//Get Angular connected with this info somehow
