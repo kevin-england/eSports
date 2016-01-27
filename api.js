@@ -11,6 +11,7 @@ router.get('/', function(req, res) {
     if (!error && response.statusCode == 200) {
       var tournaments = JSON.parse(body);
       res.json(tournaments);
+      console.log(tournaments)
     }
   });
 });
