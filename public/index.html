@@ -4,11 +4,11 @@
   <title>Project Number Three</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/1-col-portfolio.css" rel="stylesheet">
-  <link href="css/default.css" rel="stylesheet">
   <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
   <script src="js/angular.js"></script>
+  <link href="css/default.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -20,13 +20,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand logo" href="#">Power-On</a>
+        <a class="navbar-brand logo" href="#"><span class="logo-one">Power-On</span></a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="tabs"><a href="#">Home</a></li>
-          <li class="tabs"><a href="#">Featured Tournaments</a></li>
-          <li class="tabs"><a href="#sponsors">About Us</a></li>
+          <li class="tabs"><a href="#"><span class="tabs-one">Home</span></a></li>
+          <li class="tabs"><a href="#"><span class="tabs-one">Featured Tournaments</span></a></li>
+          <li class="tabs"><a href="#sponsors"><span class="tabs-one">About Us</span></a></li>
         </ul>
       </div>
     </div>
@@ -78,12 +78,12 @@
     <div class="row">
       <div ng-controller="mainController as main" class="col-lg-offset-4 col-lg-8 search">
         <form id="searchbox" action="">
-          <input id="search" class="search-one" type="text" placeholder=" Search Tournaments">
+          <input id="search" class="search-one" type="text" placeholder="Search Tournaments">
           <input id="submit" class="submit" type="submit" value="Search">
         </form>
-        <p>{{main.data}}</p>
+        <!-- <p>{{main.data}}</p>
         <p>{{main.service}}</p>
-        <p>{{main.secret}}</p> 
+        <p>{{main.secret}}</p> -->
       </div>
     </div>
     <div class="row">
@@ -102,7 +102,7 @@
           <img class="img-responsive" src="images/sponsor-one.png">
         </div>
         <div class="col-lg-12 footer">
-          <h1 class="logo-one">Power-On
+          <h1 class="logo-two">Power-On
             <small class="sub-header">A site for gamers watching other gamers game</small>
           </h1>
         </div>

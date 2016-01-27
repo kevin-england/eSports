@@ -3,7 +3,7 @@ var app = angular.module('share', ['secret']);
 app.controller('mainController', ['theService', 'secretService',
   function(theService, secretService) {
     vm = this;
-    vm.data = 'This will be displayed as the main data'
+    vm.data = 'This will be displayed as the main data';
     vm.service = theService.show();
     vm.secret = secretService.show();
   }]);
