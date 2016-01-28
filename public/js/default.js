@@ -20,9 +20,9 @@ function featuredCall() {
   var getGame = new XMLHttpRequest();
   getGame.onload = function() {
     routerResponse = JSON.parse(getGame.responseText);
-    var gameOne = routerResponse.gameMode[i].gameId[i].observers[i];
+    var gameOne = routerResponse.id[0].discipline[0].name[0];
     featuredGames(gameOne);
   }
-  getGame.open('GET', 'http://localhost:1337/featured', true);
+  getGame.open('GET', 'http://localhost:3000/featured', true);
   getGame.send();
 }

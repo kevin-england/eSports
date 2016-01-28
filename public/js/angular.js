@@ -1,7 +1,7 @@
-var app = angular.module('share', ['secret']);
+var app = angular.module('share', []);
 
-app.controller('mainController', ['theService', 'secretService',
-  function(theService, secretService) {
+app.controller('mainController', ['theService', 'nextService',
+  function(theService, nextService) {
     vm = this;
     vm.data = 'This will be displayed as the main data';
     vm.service = theService.show();
@@ -17,13 +17,14 @@ app.factory('theService', function() {
   }  
 })
 
-var secret = angular.module('secret', []);
-
-secret.factory('secretService', function() {
-  var subText = 'This is the secret data that will only be displayed on the mainController';
+app.factory('nextService', function($http) { 
+  var getGames = function() { 
+    return $http({
+      method: 'GET',
+      url: '/featured'
+    });
+  }
   return {
-    show: function() {
-      return subText;
-    }
-  }  
-})
+    movies: getGames
+  }
+});
