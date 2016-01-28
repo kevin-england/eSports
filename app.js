@@ -18,5 +18,6 @@ app.get('/default.css', function(req, res) {
   res.sendFile(__dirname + '/default.css');
 });
 
-app.listen(1337);
+var port = process.env.PORT || 3000;
+app.listen(port);
 console.log('The server is live and brought to you by me');
