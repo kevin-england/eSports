@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express();
-var router = require('./api.js');
+var featured = require('./public/routes/featured.js');
 
-app.use('/router', router);
+app.use('/featured', featured);
 
 app.use('/', express.static('public')); 
 
