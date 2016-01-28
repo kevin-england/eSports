@@ -5,8 +5,8 @@ var bodyParser = require('body-parser');
 var textParser = bodyParser.text();
 
 featured.get('/', function(req, res) {
-  var keyword = req.body;
-  request('https://na.api.pvp.net/observer-mode/rest/featured?api_key=0532b884-44d9-41f2-8b2f-a8b0b30a7e78', function (error, response, body) {
+  var keyword = res.body;
+  request('https://api.toornament.com/v1/tournaments?api_key=ERsQmUvqo_G8J-PbiGuUkKEsnGsg5P9roJ6fB7aCsoE', function (error, response, body) {
     if (!error && response.statusCode == 200) {
       var games = JSON.parse(body);
       res.json(games);
