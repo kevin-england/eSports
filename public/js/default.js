@@ -19,10 +19,13 @@ showContent()
 function featuredCall() {
   var getGame = new XMLHttpRequest();
   getGame.onload = function() {
-    routerResponse = JSON.parse(getGame.responseText);
-    var gameOne = routerResponse.id[0].discipline[0].name[0];
-    featuredGames(gameOne);
+    var routerResponse = document.getElementById('submit');
+    routerResponse.addEventListener('click', function(){
+      response = JSON.parse(getGame.responseText);
+    }, false)
   }
   getGame.open('GET', 'http://localhost:3000/featured', true);
   getGame.send();
 }
+
+featuredCall()

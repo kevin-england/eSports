@@ -111,3 +111,13 @@
 .tabs-one:hover {
   color: #00FD00;
 }
+
+.view {
+  background-color: black;
+}
+
+.view:hover{
+  color: #00FD00;
+  background-color: black;
+  opacity: .8;
+}
