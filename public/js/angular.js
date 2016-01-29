@@ -6,5 +6,5 @@ app.controller('mainController', function($http) {
   $http({
      method: 'GET',
      url: '/featured'
-  }).success(function(data) { vm.games = data; console.log(data) });
+  }).success(function(data) { vm.games = data });
 });

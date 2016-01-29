@@ -65,6 +65,11 @@
   text-align: center;
 }
 
+.results {
+  font-size: 60px;
+  margin: 30px;
+}
+
 .search {
   font-size: 26px;
 }
@@ -112,12 +117,11 @@
   color: #00FD00;
 }
 
-.view {
-  background-color: black;
-}
-
-.view:hover{
-  color: #00FD00;
-  background-color: black;
-  opacity: .8;
+.tournaments {
+  border: 3px solid #A0A0A0;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  padding: 30px;
+  text-align: right;
 }

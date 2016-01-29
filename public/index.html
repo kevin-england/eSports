@@ -106,30 +106,21 @@
   </div>
   <div ng-controller="mainController as main" id="content" class="container-fluid">
     <div class="row">
-      <div ng-click="main.games">
+      <div class="page-header results" ng-click="main.games">
           {{main.results}}
       </div>
-      <div class="col-lg-offset-3 col-lg-9">
-        <p ng-repeat="game in main.games">
-          {{game.name}}
-          {{game.full_name}}
-          {{game.date_start}}
-          {{game.location}}
+      <div class="col-lg-12">
+        <p class="tournaments" ng-repeat="game in main.games">
+          Event Name: {{game.name}}
+          <br>
+          Full Name: {{game.discipline}}
+          <br>
+          Start Date: {{game.date_start}}
+          <br>
+          Location: {{game.location}}
+          <br>
+          Tournament Size: {{game.size}}
         </p>
-        <h1 class="page-header">Search Results:</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-7">
-        <a href="#">
-          <img class="img-responsive" src="http://placehold.it/700x300" alt="">
-        </a>
-      </div>
-      <div class="col-md-5">
-        <h3>Result One</h3>
-        <h4>Tournament Information</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantiuveniam exercitationem expedita laborum at voluptate. Labore, voluptatetotam at aut nemo deserunt rem magni pariatur quos perspiciatis atqueveniet unde.</p>
-        <a class="btn btn-primary view" href="#">View Tournament<span class="glyphicon glyphicon-chevron-right"></span></a>
       </div>
     </div>
     <hr>

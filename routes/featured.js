@@ -8,7 +8,6 @@ featured.get('/', function(req, res) {
     if (!error && response.statusCode == 200) {
       var games = JSON.parse(body);
       res.json(games);
-      console.log(games)
     }
   });
 });
