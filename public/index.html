@@ -106,12 +106,15 @@
   </div>
   <div ng-controller="mainController as main" id="content" class="container-fluid">
     <div class="row">
-      <div class="col-lg-12">
-        <div ng-click="main.games">
+      <div ng-click="main.games">
           {{main.results}}
-        </div>
+      </div>
+      <div class="col-lg-offset-3 col-lg-9">
         <p ng-repeat="game in main.games">
-          {{main.games}}
+          {{game.name}}
+          {{game.full_name}}
+          {{game.date_start}}
+          {{game.location}}
         </p>
         <h1 class="page-header">Search Results:</h1>
       </div>
