@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var featured = require('./public/routes/featured.js');
+var featured = require('./routes/featured.js');
 
 app.use('/featured', featured);
 

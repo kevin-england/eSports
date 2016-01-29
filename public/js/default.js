@@ -13,9 +13,6 @@ function showContent(){
   }, false);
 }
 
-hideContent()
-showContent()
-
 function featuredCall() {
   var getGame = new XMLHttpRequest();
   getGame.onload = function() {
@@ -28,4 +25,7 @@ function featuredCall() {
   getGame.send();
 }
 
+
+hideContent()
+showContent()
 featuredCall()
