@@ -67,7 +67,7 @@
 
 .results {
   font-size: 60px;
-  margin: 30px;
+  margin-left: 30px;
 }
 
 .search {
@@ -116,12 +116,18 @@
 .tabs-one:hover {
   color: #00FD00;
 }
+.tournament {
+  background-color: black;
+  opacity: .9;
+}
 
-.tournaments {
-  border: 2px solid #E8E8E8;
-  font-size: 24px;
+.tournament-one {
+  background-color: grey;
+  color: #00FD00;
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  margin-top: 40px;
   padding: 30px;
   text-align: right;
 }
