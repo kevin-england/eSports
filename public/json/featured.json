@@ -1,16 +1,27 @@
-[
-   {
-      "id": "5608fd12140ba061298b4569",
-      "discipline": "my_discipline",
-      "name": "My Weekly Tournament",
-      "full_name": "My Weekly Tournament - Long title",
-      "status": "running",
-      "date_start": "2015-09-06",
-      "date_end": "2015-09-07",
-      "online": true,
-      "public": true,
-      "location": "London",
-      "country": "UK",
-      "size": 16
-   }
-]
+{
+  "_links": {
+    "self": "https://api.twitch.tv/kraken/search/games?q=star&type=suggest",
+  },
+  "games": [
+    {
+      "box": {
+        "large": "http://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20II:%20Wings%20of%20Liberty-272x380.jpg",
+        "medium": "http://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20II:%20Wings%20of%20Liberty-136x190.jpg",
+        "small": "http://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20II:%20Wings%20of%20Liberty-52x72.jpg",
+        "template": "http://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20II:%20Wings%20of%20Liberty-{width}x{height}.jpg"
+      },
+      "logo": {
+        "large": "http://static-cdn.jtvnw.net/ttv-logoart/StarCraft%20II:%20Wings%20of%20Liberty-240x144.jpg",
+        "medium": "http://static-cdn.jtvnw.net/ttv-logoart/StarCraft%20II:%20Wings%20of%20Liberty-120x72.jpg",
+        "small": "http://static-cdn.jtvnw.net/ttv-logoart/StarCraft%20II:%20Wings%20of%20Liberty-60x36.jpg",
+        "template": "http://static-cdn.jtvnw.net/ttv-logoart/StarCraft%20II:%20Wings%20of%20Liberty-{width}x{height}.jpg"
+      },
+      "popularity": 114,
+      "name": "StarCraft II: Wings of Liberty",
+      "_id": 63011880,
+      "_links": { },
+      "giantbomb_id": 20674          
+    },
+    ...
+  ]
+}

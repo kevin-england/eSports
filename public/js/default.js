@@ -8,7 +8,7 @@ function featuredContent(){
   click.addEventListener('click', function(){
     var remove = document.getElementById('sponsors');    
     remove.style.display = 'none';
-    var content = document.getElementById('content');    
+    var content = document.getElementById('results');    
     content.style.display = 'block';
   }, false);
 }

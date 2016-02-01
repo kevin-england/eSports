@@ -5,9 +5,9 @@ app.controller('mainController', function($http) {
   vm.results = 'Search Results:';
   $http({
      method: 'GET',
-     url: '/featured'
+     url: '/search'
      /*search: {
       term: document.getElementById('submit').value;
      }*/
-  }).success(function(data) { vm.games = data });
+  }).success(function(data) { vm.games = data.streams });
 });

@@ -15,7 +15,7 @@ app.get('/featured', function(req, res){
 })
 
 app.get('/search', function(req, res){
-  var games = {};
+  var games = [];
   res.send(games);
 })
 
