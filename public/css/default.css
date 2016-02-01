@@ -1,17 +1,21 @@
 .about {
+  border-bottom: 1px solid grey;
   font-size: 50px;
   margin: 20px;
-  margin-top: 140px;
+  margin-top: 160px;
+  padding: 10px;
 }
 
 .about-one {
   font-size: 22px;
   margin: 20px;
+  padding: 10px;
 }
 
 .about-two {
   margin: 20px;
   margin-top: 40px;
+  padding: 10px;
 }
 
 .caption {
@@ -29,6 +33,7 @@
 }
 
 .carousel {
+  border-bottom: 1px solid black;
   opacity: .9;
 }
 
@@ -74,7 +79,7 @@
 
 .search {
   font-size: 26px;
-  border-style: none;
+  margin-top: 50px;
 }
 
 .search-one {
@@ -128,14 +133,18 @@
 }
 
 .tournament-one {
-  background-color: grey;
-  border: 1px solid white;
+  background-color: #4B4B4B;
+  border: 10px solid white;
   color: white;
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 40px;
   margin-top: 40px;
+  opacity: .9;
   padding: 30px;
-  text-align: center;
-  text-transform: capitalize;
+  text-align: right;
+}
+
+.tournament-two {
+  padding-right: 50px;
 }

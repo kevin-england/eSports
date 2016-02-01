@@ -111,17 +111,15 @@
       </div>
       <div class="col-lg-12 tournament">
         <p class="tournament-one col-lg-offset-2 col-lg-8" ng-repeat="game in main.games">
-          <img ng-src="http://www.gravatar.com/avatar/{{game.id}}" alt="Image">
+          <img class="img-responsive tournament-two col-lg-6" ng-src="{{game.preview.large}}" alt="Image">
+          <br>
+          Game Title: {{game.game}}
+          <br>
+          Last Update: {{game.channel.updated_at}}
+          <br>
+          Number of Views: {{game.channel.views}}
           <br><br>
-          Event Name: {{game.name}}
-          <br>
-          Full Name: {{game.discipline}}
-          <br>
-          Start Date: {{game.date_start}}
-          <br>
-          Location: {{game.location}}
-          <br>
-          Tournament Size: {{game.size}}
+          <a href="">{{game.channel.url}}</a>
         </p>
       </div>
     </div>
