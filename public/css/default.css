@@ -67,6 +67,7 @@
 
 .results {
   font-size: 60px;
+  margin-bottom: 20px;
   margin-left: 30px;
   margin-top: 50px;
 }
@@ -136,4 +137,5 @@
   margin-top: 40px;
   padding: 30px;
   text-align: center;
+  text-transform: capitalize;
 }
