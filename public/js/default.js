@@ -18,6 +18,8 @@ function showContent(){
   click.addEventListener('click', function(){
     var remove = document.getElementById('sponsors');    
     remove.style.display = 'none';
+    var removed = document.getElementById('results');    
+    removed.style.display = 'none';
     var content = document.getElementById('content');    
     content.style.display = 'block';
   }, false);

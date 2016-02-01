@@ -134,7 +134,7 @@
 
 .tournament-one {
   background-color: #4B4B4B;
-  border: 10px solid white;
+  border: 5px solid white;
   color: white;
   font-size: 22px;
   font-weight: bold;
@@ -146,5 +146,5 @@
 }
 
 .tournament-two {
-  padding-right: 50px;
+  padding-right: 20px;
 }
