@@ -1,0 +1,35 @@
+[
+  {
+    "id": "5608fd12140ba061298b4569",
+    "discipline": "my_discipline",
+    "name": "My Weekly Tournament",
+    "full_name": "My Weekly Tournament - Long title",
+    "status": "running",
+    "date_start": "2015-09-06",
+    "date_end": "2015-09-07",
+    "timezone": "America\/Sao_Paulo",
+    "online": true,
+    "public": true,
+    "location": "London",
+    "country": "UK",
+    "size": 16,
+    "participant_type": "team",
+    "match_type": "duel",
+    "organization": "Avery Bullock",
+    "website": "http:\/\/www.toornament.com",
+    "description": null,
+    "rules": null,
+    "prize": null,
+    "streams": [
+      {
+        "id": "56742bc7cc3c17ee608b4567",
+        "name": "DreamhackCS",
+        "url": "http:\/\/www.twitch.tv\/dreamhackcs",
+        "language": "en"
+      }
+    ],
+    "check_in": true,
+    "participant_nationality": true,
+    "match_format": "bo3"
+  }
+]
