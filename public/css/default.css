@@ -68,10 +68,12 @@
 .results {
   font-size: 60px;
   margin-left: 30px;
+  margin-top: 50px;
 }
 
 .search {
   font-size: 26px;
+  border-style: none;
 }
 
 .search-one {
@@ -79,6 +81,7 @@
   border: 3px solid black;
   border-radius: 100px;
   margin: 5px;
+  outline: none;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -92,10 +95,11 @@
 }
 
 .submit {
-  color: white;
   background-color: black;
   border: 2px solid #A0A0A0;
   border-radius: 100px;
+  color: white;
+  outline: none;
   padding: 10px;
   padding-left: 30px;
   padding-right: 30px;
@@ -116,6 +120,7 @@
 .tabs-one:hover {
   color: #00FD00;
 }
+
 .tournament {
   background-color: black;
   opacity: .9;
@@ -123,11 +128,12 @@
 
 .tournament-one {
   background-color: grey;
-  color: #00FD00;
-  font-size: 20px;
+  border: 1px solid white;
+  color: white;
+  font-size: 22px;
   font-weight: bold;
   margin-bottom: 40px;
   margin-top: 40px;
   padding: 30px;
-  text-align: right;
+  text-align: center;
 }

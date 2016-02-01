@@ -106,11 +106,13 @@
   </div>
   <div ng-controller="mainController as main" id="content" class="container-fluid">
     <div class="row">
-      <div class="page-header results" ng-click="main.games">
+      <div class="results" ng-click="main.games">
           {{main.results}}
       </div>
       <div class="col-lg-12 tournament">
         <p class="tournament-one col-lg-offset-2 col-lg-8" ng-repeat="game in main.games">
+          <img ng-src="images/sponsor.png{{game.id}}" alt="Image">
+          <br><br>
           Event Name: {{game.name}}
           <br>
           Full Name: {{game.discipline}}
