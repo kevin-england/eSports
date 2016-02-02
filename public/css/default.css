@@ -93,6 +93,21 @@
   padding-right: 20px;
 }
 
+.stream {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  font-size: 20px;
+  outline: none;
+}
+
+.stream:hover {
+  background-color: black;
+  border: 1px solid black;
+  color: #00FD00;
+  opacity: .8;
+}
+
 .sub-header {
   color: white;
   font-size: 18px;

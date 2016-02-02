@@ -21,5 +21,5 @@ app.controller('nextController', function($http) {
      /*search: {
       term: document.getElementById('submit').value;
      }*/
-  }).success(function(data) { vm.games = data.top });
+  }).success(function(data) { vm.games = data.videos });
 });
