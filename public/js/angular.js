@@ -14,12 +14,12 @@ app.controller('mainController', function($http) {
 
 app.controller('nextController', function($http) {
   var vm = this;
-  vm.results = 'Search Results:';
+  vm.results = 'Featured Streams:';
   $http({
      method: 'GET',
      url: '/featured'
      /*search: {
       term: document.getElementById('submit').value;
      }*/
-  }).success(function(data) { vm.games = data.games });
+  }).success(function(data) { vm.games = data.top });
 });

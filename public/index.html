@@ -123,24 +123,46 @@
         </p>
       </div>
     </div>
-    <div ng-controller="nextController as next" id="results" class="container-fluid">
-      <div class="row">
-        <div class="results" ng-click="next.games">
-            {{next.results}}
-        </div>
-        <div class="col-lg-12 tournament">
-          <p class="tournament-one col-lg-offset-2 col-lg-8" ng-repeat="game in next.games">
-            <img class="img-responsive tournament-two col-lg-6" ng-src="{{game.box.medium}}"  alt="Image">
-            <br>
-            Game Title: {{game.name}}
-            <br>
-            Last Update: {{game.channel.updated_at}}
-            <br>
-            Number of Views: {{game.channel.views}}
-            <br><br>
-            <a href="">{{game.channel.url}}</a>
-          </p>
-        </div>
+    <hr>
+    <div class="row text-center">
+      <div class="col-lg-12">
+        <ul class="pagination">
+          <li><a href="#">&laquo;</a></li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">&raquo;</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <footer>
+      <div class="col-lg-12 footer">
+        <h1 class="logo-two">Power-On
+          <small class="sub-header">A site for gamers watching other gamers game</small>
+        </h1>
+      </div>
+    </footer>
+  </div>
+  <div ng-controller="nextController as next" id="results" class="container-fluid">
+    <div class="row">
+      <div class="results" ng-click="next.games">
+          {{next.results}}
+      </div>
+      <div class="col-lg-12 tournament">
+        <p class="tournament-one col-lg-offset-2 col-lg-8" ng-repeat="game in next.games">
+          <img class="img-responsive tournament-two col-lg-4" ng-src="{{game.game.logo.large}}"  alt="Image">
+          <br>
+            Game Title: {{game.game.name}}
+          <br>
+            Last Update: {{game._links.self}}
+          <br>
+          Number of Viewers: {{game.viewers}}
+          <br><br>
+          <a href="">{{game.game.url}}</a>
+        </p>
       </div>
     </div>
     <hr>

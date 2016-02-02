@@ -1,12 +1,16 @@
 function hideContent(){
   var content = document.getElementById('content');    
   content.style.display = 'none';
+  var contents = document.getElementById('results');    
+  contents.style.display = 'none';
 }
 
 function featuredContent(){
   var click = document.getElementById('featured');
   click.addEventListener('click', function(){
     var remove = document.getElementById('sponsors');    
+    remove.style.display = 'none';
+    var remove = document.getElementById('content');    
     remove.style.display = 'none';
     var content = document.getElementById('results');    
     content.style.display = 'block';
