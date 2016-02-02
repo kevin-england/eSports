@@ -10,8 +10,10 @@ function featuredContent(){
   click.addEventListener('click', function(){
     var remove = document.getElementById('sponsors');    
     remove.style.display = 'none';
-    var remove = document.getElementById('content');    
-    remove.style.display = 'none';
+    var removed = document.getElementById('content');    
+    removed.style.display = 'none';
+    var remover = document.getElementById('carousel');    
+    remover.style.display = 'none';
     var content = document.getElementById('results');    
     content.style.display = 'block';
   }, false);
@@ -24,6 +26,8 @@ function showContent(){
     remove.style.display = 'none';
     var removed = document.getElementById('results');    
     removed.style.display = 'none';
+    var remover = document.getElementById('carousel');    
+    remover.style.display = 'none';
     var content = document.getElementById('content');    
     content.style.display = 'block';
   }, false);

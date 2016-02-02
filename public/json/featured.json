@@ -1,33 +1,32 @@
 {
   "_links": {
-    "self": "https://api.twitch.tv/kraken/games/top?limit=10&offset=0",
-    "next": "https://api.twitch.tv/kraken/games/top?limit=10&offset=10"
+    "next": "https://api.twitch.tv/kraken/videos/top?game=Gaming+Talk+Shows&limit=10&offset=10&period=month",
+    "self": "https://api.twitch.tv/kraken/videos/top?game=Gaming+Talk+Shows&limit=10&offset=0&period=month"
   },
-  "_total": 322,
-  "top": [
+  "videos": [
     {
-      "game": {
-        "name": "Counter-Strike: Global Offensive",
-        "box": {
-          "large": "http://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike:%20Global%20Offensive-272x380.jpg",
-          "medium": "http://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike:%20Global%20Offensive-136x190.jpg",
-          "small": "http://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike:%20Global%20Offensive-52x72.jpg",
-          "template": "http://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike:%20Global%20Offensive-{width}x{height}.jpg"
-        },
-        "logo": {
-          "large": "http://static-cdn.jtvnw.net/ttv-logoart/Counter-Strike:%20Global%20Offensive-240x144.jpg",
-          "medium": "http://static-cdn.jtvnw.net/ttv-logoart/Counter-Strike:%20Global%20Offensive-120x72.jpg",
-          "small": "http://static-cdn.jtvnw.net/ttv-logoart/Counter-Strike:%20Global%20Offensive-60x36.jpg",
-          "template": "http://static-cdn.jtvnw.net/ttv-logoart/Counter-Strike:%20Global%20Offensive-{width}x{height}.jpg"
-        },
-        "_links": {},
-        "_id": 32399,
-        "giantbomb_id": 36113,
-        "url": "http://www.twitch.tv/test_channel"
+      "title": "Twitch Weekly - February 6, 2015",
+      "description": "Twitch Weekly LIVE on February 6, 2015!",
+      "broadcast_id": 13019796368,
+      "status": "recorded",
+      "_id": "c6055863",
+      "recorded_at": "2015-02-06T21:01:09Z",
+      "game": "Gaming Talk Shows",
+      "length": 4015,
+      "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-621292653-320x240.jpg",
+      "url": "http://www.twitch.tv/twitch/c/6055863",
+      "embed": "<object bgcolor='#000000' data='http://www.twitch.tv/swflibs/TwitchPlayer.swf' height='300' id='clip_embed_player_flash' type='application/x-shockwave-flash' width='400'>\n<param name='movie' value='http://www.twitch.tv/swflibs/TwitchPlayer.swf' />\n<param name='allowScriptAccess' value='always' />\n<param name='allowNetworking' value='all' />\n<param name='allowFullScreen' value='true' />\n<param name='flashvars' value='title=Twitch%2BWeekly%2B-%2BFebruary%2B6%252C%2B2015&amp;channel=twitch&amp;auto_play=false&amp;start_volume=25&amp;videoId=c6055863' />\n</object>\n",
+      "views": 318,
+      "broadcast_type": "highlight",
+      "_links": {
+        "self": "https://api.twitch.tv/kraken/videos/c6055863",
+        "channel": "https://api.twitch.tv/kraken/channels/twitch"
       },
-      "viewers": 23873,
-      "channels": 305
-    },
+      "channel": {
+        "name": "twitch",
+        "display_name": "Twitch"
+      }
+    }
     ...
   ]
 }

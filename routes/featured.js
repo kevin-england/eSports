@@ -4,7 +4,7 @@ var request = require('request');
 var bodyParser = require('body-parser');
 
 featured.get('/', function(req, res) {
-  request('https://api.twitch.tv/kraken/games/top', function (error, response, body) {
+  request('https://api.twitch.tv/kraken/videos/top?game=Gaming+Talk+Shows&period=month', function (error, response, body) {
     if (!error && response.statusCode == 200) {
       var games = JSON.parse(body);
       res.json(games);
