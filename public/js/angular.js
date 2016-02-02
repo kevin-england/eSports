@@ -14,7 +14,7 @@ app.controller('mainController', function($http) {
 
 app.controller('nextController', function($http) {
   var vm = this;
-  vm.results = 'Featured Streams:';
+  vm.results = 'Featured Channels:';
   $http({
      method: 'GET',
      url: '/featured'

@@ -20,12 +20,12 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand logo" href="#"><span class="logo-one">Power-On</span></a>
+        <a class="navbar-brand logo" href="index.html"><span class="logo-one">Power-On</span></a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="tabs"><a href="#"><span class="tabs-one">Home</span></a></li>
-          <li class="tabs"><a href="#"><span id="featured" class="tabs-one">Featured Streams</span></a></li>
+          <li class="tabs"><a href="index.html"><span class="tabs-one">Home</span></a></li>
+          <li class="tabs"><a href="#"><span id="featured" class="tabs-one">Featured Channels</span></a></li>
           <li class="tabs"><a href="#sponsors"><span class="tabs-one">About Us</span></a></li>
         </ul>
       </div>
@@ -90,18 +90,13 @@
         <h2 class="about-two">Sponsors and Affliates:</h2>
         <br>
         <div class="col-lg-4">
-          <img class="img-responsive" src="images/sponsor.png">
+          <img class="img-responsive center-block" src="images/sponsor.png">
         </div>
         <div class="col-lg-4">
-          <img class="img-responsive image" src="images/sponsor-two.png">
+          <img class="img-responsive center-block" src="images/sponsor-two.png">
         </div>
         <div class="col-lg-4">
-          <img class="img-responsive image-one" src="images/sponsor-one.png">
-        </div>
-        <div class="col-lg-12 footer">
-          <h1 class="logo-two">Power-On
-            <small class="sub-header">A site for gamers watching other gamers game</small>
-          </h1>
+          <img class="img-responsive center-block image" src="images/sponsor-one.png">
         </div>
       </div>
     </div>
@@ -114,12 +109,13 @@
       <div class="col-lg-12 tournament">
         <p class="tournament-one col-lg-offset-2 col-lg-8" ng-repeat="game in main.games">
           <img class="img-responsive tournament-two col-lg-6" ng-src="{{game.preview.large}}" alt="Image">
+          <span class="title">{{game.game}}</span>
+          <br><br>
+          Total Followers: {{game.channel.followers}}
           <br>
-          Game Title: {{game.game}}
+          Total Views: {{game.channel.views}}
           <br>
-          Last Update: {{game.channel.updated_at}}
-          <br>
-          Number of Views: {{game.channel.views}}
+          Current Viewers: {{game.viewers}}
           <br><br>
           <a class="btn btn-primary stream" ng-href="{{game.channel.url}}">View Stream<span class="glyphicon glyphicon-chevron-right"></span></a>
         </p>
@@ -140,13 +136,6 @@
       </div>
     </div>
     <hr>
-    <footer>
-      <div class="col-lg-12 footer">
-        <h1 class="logo-two">Power-On
-          <small class="sub-header">A site for gamers watching other gamers game</small>
-        </h1>
-      </div>
-    </footer>
   </div>
   <div ng-controller="nextController as next" id="results" class="container-fluid">
     <div class="row">
@@ -156,12 +145,11 @@
       <div class="col-lg-12 tournament">
         <p class="tournament-one col-lg-offset-2 col-lg-8" ng-repeat="game in next.games">
           <img class="img-responsive tournament-two col-lg-5" ng-src="{{game.preview}}"  alt="Image">
-          <br>
-            Title: {{game.title}}
-          <br>
-            Category: {{game.game}}
-          <br>
+          <span class="title">{{game.title}}</span>
+          <br><br>
           Number of Views: {{game.views}}
+          <br>
+          Category: {{game.game}}
           <br><br>
           <a class="btn btn-primary stream" ng-href="{{game.url}}">View Stream<span class="glyphicon glyphicon-chevron-right"></span></a>
         </p>
@@ -182,14 +170,14 @@
       </div>
     </div>
     <hr>
-    <footer>
+  </div>
+  <footer>
       <div class="col-lg-12 footer">
         <h1 class="logo-two">Power-On
           <small class="sub-header">A site for gamers watching other gamers game</small>
         </h1>
       </div>
-    </footer>
-  </div>
+  </footer>
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/default.js"></script>
