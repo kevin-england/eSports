@@ -138,10 +138,10 @@
 }
 
 .title {
-  color: black;
-  font-size: 30px;
+  color: white;
+  font-size: 32px;
   font-weight: bold;
-  outline: none;
+  text-shadow: 1px 1px 1px black;
 }
 
 .tournament {
@@ -152,8 +152,8 @@
 .tournament-one {
   background-color: #4B4B4B;
   border: 5px solid white;
-  color: white;
-  font-size: 22px;
+  color: black;
+  font-size: 26px;
   margin-bottom: 40px;
   margin-top: 40px;
   opacity: .9;

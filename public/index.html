@@ -107,15 +107,15 @@
           {{main.results}}
       </div>
       <div class="col-lg-12 tournament">
-        <p class="tournament-one col-lg-offset-2 col-lg-8" ng-repeat="game in main.games">
+        <p class="tournament-one col-lg-offset-2 col-lg-8" ng-repeat="game in main.games  | limitTo:5">
           <img class="img-responsive tournament-two col-lg-6" ng-src="{{game.preview.large}}" alt="Image">
           <span class="title">{{game.game}}</span>
           <br><br>
-          Total Followers: {{game.channel.followers}}
+          Currently Viewing: {{game.viewers}}
           <br>
-          Total Views: {{game.channel.views}}
+          Number of Views: {{game.channel.views}}
           <br>
-          Current Viewers: {{game.viewers}}
+          Number of Followers: {{game.channel.followers}}
           <br><br>
           <a class="btn btn-primary stream" ng-href="{{game.channel.url}}">View Stream<span class="glyphicon glyphicon-chevron-right"></span></a>
         </p>
@@ -143,15 +143,17 @@
           {{next.results}}
       </div>
       <div class="col-lg-12 tournament">
-        <p class="tournament-one col-lg-offset-2 col-lg-8" ng-repeat="game in next.games">
-          <img class="img-responsive tournament-two col-lg-5" ng-src="{{game.preview}}"  alt="Image">
-          <span class="title">{{game.title}}</span>
+        <p class="tournament-one col-lg-offset-2 col-lg-8" ng-repeat="game in next.games | limitTo:5">
+          <img class="img-responsive tournament-two col-lg-5" ng-src="{{game.stream.preview.large}}"  alt="Image">
+          <span class="title">{{game.stream.game}}</span>
           <br><br>
-          Number of Views: {{game.views}}
+          Currently Viewing: {{game.stream.viewers}}
           <br>
-          Category: {{game.game}}
+          Number of Views: {{game.stream.channel.views}}
+          <br>
+          Number of Followers: {{game.stream.channel.followers}}
           <br><br>
-          <a class="btn btn-primary stream" ng-href="{{game.url}}">View Stream<span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary stream" ng-href="{{game.stream.channel.url}}">View Stream<span class="glyphicon glyphicon-chevron-right"></span></a>
         </p>
       </div>
     </div>
