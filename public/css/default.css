@@ -93,7 +93,6 @@
   border: 1px solid black;
   color: white;
   font-size: 20px;
-  outline: none;
 }
 
 .stream:hover {
@@ -147,13 +146,15 @@
 .tournament {
   background-color: black;
   opacity: .9;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .tournament-one {
   background-color: #4B4B4B;
   border: 5px solid white;
   color: black;
-  font-size: 26px;
+  font-size: 24px;
   margin-bottom: 40px;
   margin-top: 40px;
   opacity: .9;
