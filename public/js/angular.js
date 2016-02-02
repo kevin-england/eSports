@@ -18,8 +18,5 @@ app.controller('nextController', function($http) {
   $http({
      method: 'GET',
      url: '/featured'
-     /*search: {
-      term: document.getElementById('submit').value;
-     }*/
-  }).success(function(data) { vm.games = data.videos });
+  }).success(function(data) { vm.games = data.featured });
 });
