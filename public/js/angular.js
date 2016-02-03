@@ -4,10 +4,10 @@ app.controller('mainController', function($http) {
   var vm = this;
   vm.results = 'Search Results:';
   /*vm.update = function() {
-    console.log(vm.searchInfo.availableTimes);
+    console.log(vm.games);
   }
-  searchInfo.getSearchInfo().then(function(response) {
-    vm.searchInfo = response.data;
+  games.getSearchInfo().then(function(response) {
+    vm.games = response.data;
   });*/
   $http({
      method: 'GET',

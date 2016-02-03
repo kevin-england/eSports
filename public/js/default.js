@@ -12,6 +12,14 @@ $('a[href*="#"]:not([href="#"])').click(function() {
   }
 });
 
+$("#featured").click(function() {
+  $("#results").slideToggle(2000, "linear")
+});
+
+$("#submit").click(function() {
+    $("#content").slideToggle(2000, "linear")
+});
+
 function hideContent(){
   var content = document.getElementById('content');    
   content.style.display = 'none';
