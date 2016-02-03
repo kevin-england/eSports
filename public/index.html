@@ -20,7 +20,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand logo" href="index.html"><span class="logo-one">Power-On</span></a>
+        <a class="navbar-brand logo" id="home"><span class="logo-one">Power-On</span></a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
@@ -79,8 +79,8 @@
     <br>
     <div class="row">
       <div class="col-lg-offset-4 col-lg-8 search">
-        <input id="search" class="search-one" type="text" placeholder="Search Streams">
-        <input id="submit" class="submit" type="submit" value="Search">
+        <input id="search" class="search-one" type="text" placeholder="Search Channels">
+        <input id="submit" name="top" class="submit" type="submit" value="Search">
       </div>
     </div>
     <div class="row">
@@ -107,32 +107,24 @@
           {{main.results}}
       </div>
       <div class="col-lg-12 tournament">
-        <p class="tournament-one col-lg-offset-2 col-lg-8" ng-repeat="game in main.games  | limitTo:5">
-          <img class="img-responsive tournament-two col-lg-6" ng-src="{{game.preview.large}}" alt="Image">
+        <p class="tournament-one col-lg-offset-2 col-lg-8" ng-repeat="game in main.games | limitTo:5">
+          <img class="img-responsive tournament-two col-lg-5" ng-src="{{game.logo}}" alt="Image">
           <span class="title">{{game.game}}</span>
           <br><br>
-          Currently Viewing: {{game.viewers}}
+          Currently Viewing: {{game.views}}
           <br>
-          Number of Views: {{game.channel.views}}
+          Number of Views: {{game.views}}
           <br>
-          Number of Followers: {{game.channel.followers}}
+          Number of Followers: {{game.followers}}
           <br><br>
-          <a class="btn btn-primary stream" ng-href="{{game.channel.url}}">View Stream<span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary stream" ng-href="{{game.url}}">View Stream<span class="glyphicon glyphicon-chevron-right"></span></a>
         </p>
       </div>
     </div>
     <hr>
     <div class="row text-center">
       <div class="col-lg-12">
-        <ul class="pagination">
-          <li><a href="#">&laquo;</a></li>
-          <li class="active"><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">&raquo;</a></li>
-        </ul>
+        <a class="top" href="#top">Page Top</a>
       </div>
     </div>
     <hr>
@@ -147,8 +139,6 @@
           <img class="img-responsive tournament-two col-lg-5" ng-src="{{game.stream.preview.large}}"  alt="Image">
           <span class="title">{{game.stream.game}}</span>
           <br><br>
-          Currently Viewing: {{game.stream.viewers}}
-          <br>
           Number of Views: {{game.stream.channel.views}}
           <br>
           Number of Followers: {{game.stream.channel.followers}}
@@ -160,15 +150,7 @@
     <hr>
     <div class="row text-center">
       <div class="col-lg-12">
-        <ul class="pagination">
-          <li><a href="#">&laquo;</a></li>
-          <li class="active"><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">&raquo;</a></li>
-        </ul>
+        <a class="top" href="#top">Page Top</a>
       </div>
     </div>
     <hr>
