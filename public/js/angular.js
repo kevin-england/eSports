@@ -9,7 +9,7 @@ app.controller('mainController', function($http) {
      /*search: {
       term: document.getElementById('submit').value;
      }*/
-  }).success(function(data) { vm.games = data.streams });
+  }).success(function(data) { vm.games = data.channels });
 });
 
 app.controller('nextController', function($http) {
