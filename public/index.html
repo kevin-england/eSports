@@ -1,173 +1,174 @@
 <!DOCTYPE html>
 <html ng-app="share" lang="en">
-<head>
-  <title>Project Number Three</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/1-col-portfolio.css" rel="stylesheet">
-  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-  <script src="js/angular.js"></script>
-  <link href="css/default.css" rel="stylesheet">
-</head>
-<body>
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" dattarge"example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand logo" href="index.html"><span class="logo-one">Power-On</span></a>
+  <head>
+    <title>Project Number Three</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="js/angular.js"></script>
+    <link href="css/default.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" dattarge"example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand logo" href="index.html"><span class="logo-one">Power-On</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="tabs"><a href="index.html"><span class="tabs-one">Home</span></a></li>
+            <li class="tabs"><a href="#"><span id="featured" class="tabs-one">Featured Channels</span></a></li>
+            <li class="tabs"><a href="#sponsors"><span class="tabs-one">About Us</span></a></li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="tabs"><a href="index.html"><span class="tabs-one">Home</span></a></li>
-          <li class="tabs"><a href="#"><span id="featured" class="tabs-one">Featured Channels</span></a></li>
-          <li class="tabs"><a href="#sponsors"><span class="tabs-one">About Us</span></a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="container-fluid">
-    <div id="carousel">
-      <div class="row">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li >
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <img class="img-responsive carousel" src="images/esports.jpg" alt="esports">
-              <div class="caption">Craving action?</div>
+    </nav>
+    <div class="container-fluid">
+      <div id="carousel">
+        <div class="row">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li >
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img class="img-responsive carousel" src="images/esports.jpg" alt="esports">
+                <div class="caption">Craving action?</div>
+              </div>
+              <div class="item">
+                <img class="img-responsive carousel" src="images/esports-one.jpg" alt="esports- one">
+                <div class="caption">Seeking live-streaming games?</div>
+              </div>
+              <div class="item">
+                <img class="img-responsive carousel" src="images/esports-two.jpg" alt="esports- two">
+                <div class="caption">Get in the game!</div>
+              </div>
+              <div class="item">
+                <img class="img-responsive carousel" src="images/esports-three.jpg" alt=" esports-three">
+                <div class="caption">Start exploring now!</div>
+              </div>
+              <div class="item">
+                <img class="img-responsive carousel" src="images/esports-four.jpg" alt="esports -four">
+                <div class="caption">Power-On has you covered!</div>
+              </div>
+              <a class="left carousel-control" href="#carousel-example-generic" role="button"   data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button"  data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <div class="item">
-              <img class="img-responsive carousel" src="images/esports-one.jpg" alt="esports- one">
-              <div class="caption">Seeking live-streaming games?</div>
-            </div>
-            <div class="item">
-              <img class="img-responsive carousel" src="images/esports-two.jpg" alt="esports- two">
-              <div class="caption">Get in the game!</div>
-            </div>
-            <div class="item">
-              <img class="img-responsive carousel" src="images/esports-three.jpg" alt=" esports-three">
-              <div class="caption">Start exploring now!</div>
-            </div>
-            <div class="item">
-              <img class="img-responsive carousel" src="images/esports-four.jpg" alt="esports -four">
-              <div class="caption">Power-On has you covered!</div>
-            </div>
-            <a class="left carousel-control" href="#carousel-example-generic" role="button"   data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button"  data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
         </div>
       </div>
     </div>
     <br>
     <br>
-    <div class="row">
-      <div class="col-lg-offset-4 col-lg-8 search">
-        <form ng-submit="update()">
-          <input id="search" class="search-one" type="text" placeholder="Search Games">
-          <input id="submit" name="top" class="submit" type="submit" value="Search">
-        </form>
+    <div ng-controller="mainController as main" class="container-fluid">
+      <div class="row">
+        <div class="col-lg-offset-4 col-lg-8 search">
+          <form ng-submit="main.update()">
+            <input ng-model="main.search" id="search" class="search-one" type="text" placeholder="Search Games">
+            <button id="submit" name="top" class="submit" type="submit" value="submit">Search</button>
+          </form>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div id="sponsors" class="col-lg-12">
-        <h1 class="about">About Us</h1>
-        <p class="about-one">We are a non-profit organization that wants to give you access to all live games via Twitch.tv! Here at Power-On we strive to bring you the highest quality gaming around! We are powered by Twitch.tv who is one of our main sponsors.<br><br> Contact us at <a href="index.html">poweron@email.com</a> for any questions!</p>
-        <h2 class="about-two">Sponsors and Affliates:</h2>
+      <div id="content" class="row">
+        <div class="results" ng-click="main.games">
+            {{main.results}}
+        </div>
+        <div class="col-lg-12 tournament">
+          <p class="tournament-one col-lg-offset-2 col-lg-8" ng-repeat="game in main.games | limitTo:5">
+            <img class="img-responsive tournament-two col-lg-6" ng-src="{{game.preview.large}}" alt="Image">
+            <span class="title">{{game.game}}</span>
+            <br><br>
+            Currently Viewing: {{game.viewers}}
+            <br>
+            Number of Views: {{game.channel.views}}
+            <br>
+            Number of Followers: {{game.channel.followers}}
+            <br><br>
+            <a class="btn btn-primary stream" ng-href="{{game.channel.url}}">View Stream<span class="glyphicon glyphicon-chevron-right"></span></a>
+          </p>
+        </div>
         <br>
-        <div class="col-lg-4">
-          <img class="img-responsive center-block" src="images/sponsor.png">
-        </div>
-        <div class="col-lg-4">
-          <img class="img-responsive center-block" src="images/sponsor-two.png">
-        </div>
-        <div class="col-lg-4">
-          <img class="img-responsive center-block image" src="images/sponsor-one.png">
+        <div class="row text-center">
+          <div class="col-lg-12">
+            <button class="top"><a class="top-one" href="#top">Scroll Up</a></button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div ng-controller="mainController as main" id="content" class="container-fluid">
-    <div class="row">
-      <div class="results" ng-click="main.games">
-          {{main.results}}
+    <div ng-controller="nextController as next" id="results" class="container-fluid">
+      <div class="row">
+        <div class="results" ng-click="next.games">
+            {{next.results}}
+        </div>
+        <div class="col-lg-12 tournament">
+          <p class="tournament-one col-lg-offset-2 col-lg-8" ng-repeat="game in next.games | limitTo:5">
+            <img class="img-responsive tournament-two col-lg-6" ng-src="{{game.stream.preview.large}}"  alt="Image">
+            <span class="title">{{game.stream.game}}</span>
+            <br><br>
+            Currently Viewing: {{game.stream.viewers}}
+            <br>
+            Number of Views: {{game.stream.channel.views}}
+            <br>
+            Number of Followers: {{game.stream.channel.followers}}
+            <br><br>
+            <a class="btn btn-primary stream" ng-href="{{game.stream.channel.url}}">View Stream<span class="glyphicon glyphicon-chevron-right"></span></a>
+          </p>
+        </div>
       </div>
-      <div class="col-lg-12 tournament">
-        <p class="tournament-one col-lg-offset-2 col-lg-8" ng-repeat="game in main.games | limitTo:5">
-          <img class="img-responsive tournament-two col-lg-6" ng-src="{{game.preview.large}}" alt="Image">
-          <span class="title">{{game.game}}</span>
-          <br><br>
-          Currently Viewing: {{game.viewers}}
-          <br>
-          Number of Views: {{game.channel.views}}
-          <br>
-          Number of Followers: {{game.channel.followers}}
-          <br><br>
-          <a class="btn btn-primary stream" ng-href="{{game.channel.url}}">View Stream<span class="glyphicon glyphicon-chevron-right"></span></a>
-        </p>
-      </div>
-    </div>
-    <hr>
-    <div class="row text-center">
-      <div class="col-lg-12">
-        <button class="top"><a class="top-one" href="#top">Scroll Up</a></button>
-      </div>
-    </div>
-    <hr>
-  </div>
-  <div ng-controller="nextController as next" id="results" class="container-fluid">
-    <div class="row">
-      <div class="results" ng-click="next.games">
-          {{next.results}}
-      </div>
-      <div class="col-lg-12 tournament">
-        <p class="tournament-one col-lg-offset-2 col-lg-8" ng-repeat="game in next.games | limitTo:5">
-          <img class="img-responsive tournament-two col-lg-6" ng-src="{{game.stream.preview.large}}"  alt="Image">
-          <span class="title">{{game.stream.game}}</span>
-          <br><br>
-          Currently Viewing: {{game.stream.viewers}}
-          <br>
-          Number of Views: {{game.stream.channel.views}}
-          <br>
-          Number of Followers: {{game.stream.channel.followers}}
-          <br><br>
-          <a class="btn btn-primary stream" ng-href="{{game.stream.channel.url}}">View Stream<span class="glyphicon glyphicon-chevron-right"></span></a>
-        </p>
+      <div class="row text-center">
+        <div class="col-lg-12">
+          <button class="top"><a class="top-one" href="#top">Scroll Up</a></button>
+        </div>
       </div>
     </div>
-    <hr>
-    <div class="row text-center">
-      <div class="col-lg-12">
-        <button class="top"><a class="top-one" href="#top">Scroll Up</a></button>
+    <div class="container-fluid">
+      <div class="row">
+        <div id="sponsors" class="col-lg-12">
+          <h1 class="about">About Us</h1>
+          <p class="about-one">We are a non-profit organization that wants to give you access to all live games via Twitch.tv! Here at Power-On we strive to bring you the highest quality gaming around! We are powered by Twitch.tv who is one of our main sponsors.<br><br> Contact us at <a href="index.html">poweron@email.com</a> for any questions!</p>
+          <h2 class="about-two">Sponsors and Affliates:</h2>
+          <br>
+          <div class="col-lg-4">
+            <img class="img-responsive center-block" src="images/sponsor.png">
+          </div>
+          <div class="col-lg-4">
+            <img class="img-responsive center-block" src="images/sponsor-two.png">
+          </div>
+          <div class="col-lg-4">
+            <img class="img-responsive center-block image" src="images/sponsor-one.png">
+          </div>
+        </div>
       </div>
     </div>
-    <hr>
-  </div>
-  <footer>
-      <div class="col-lg-12 footer">
-        <h1 class="logo-two">Power-On
-          <small class="sub-header">A site for gamers watching other gamers game</small>
-        </h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 footer">
+          <h1 class="logo-two">Power-On
+            <small class="sub-header">A site for gamers watching other gamers game</small>
+          </h1>
+        </div>
       </div>
-  </footer>
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/default.js"></script>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/default.js"></script>
   </body>
 </html>
