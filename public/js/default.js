@@ -13,11 +13,11 @@ $('a[href*="#"]:not([href="#"])').click(function() {
 });
 
 $("#featured").click(function() {
-  $("#results").slideToggle(2000, "linear")
+  $("#results").slideDown(2000, "linear")
 });
 
 $("#submit").click(function() {
-    $("#content").slideToggle(2000, "linear")
+    $("#content").slideDown(2000, "linear")
 });
 
 function hideContent(){

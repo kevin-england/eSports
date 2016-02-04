@@ -79,7 +79,7 @@
     <br>
     <div class="row">
       <div class="col-lg-offset-4 col-lg-8 search">
-        <form ng-submit="vm.update()">
+        <form ng-submit="update()">
           <input id="search" class="search-one" type="text" placeholder="Search Games">
           <input id="submit" name="top" class="submit" type="submit" value="Search">
         </form>
@@ -141,6 +141,8 @@
           <img class="img-responsive tournament-two col-lg-6" ng-src="{{game.stream.preview.large}}"  alt="Image">
           <span class="title">{{game.stream.game}}</span>
           <br><br>
+          Currently Viewing: {{game.stream.viewers}}
+          <br>
           Number of Views: {{game.stream.channel.views}}
           <br>
           Number of Followers: {{game.stream.channel.followers}}
