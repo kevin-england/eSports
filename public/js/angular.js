@@ -11,11 +11,18 @@ app.controller('mainController', function($http) {
   games.update().then(function(response) {
     vm.show = response.data;
   });*/
-  $http({
-     method: 'GET',
-     url: '/search'
-  }).success(function(data) { vm.games = data.streams });
+  vm.update = function() {
+    console.log('update')
+    $http({
+      method: 'GET',
+      url: '/search/' + vm.search
+    })
+    .success(function(data) { 
+      vm.games = data.streams 
+    });
+  }
 });
+
 
 app.controller('nextController', function($http) {
   var vm = this;

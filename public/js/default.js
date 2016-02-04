@@ -50,8 +50,6 @@ function showContent(){
     removed.style.display = 'none';
     var remover = document.getElementById('carousel');    
     remover.style.display = 'none';
-    var content = document.getElementById('content');    
-    content.style.display = 'block';
   }, false);
 }
 
