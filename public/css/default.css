@@ -1,6 +1,5 @@
 .about {
   border-bottom: 1px solid grey;
-  border-top: 1px solid grey;
   font-size: 50px;
   margin: 20px;
   margin-top: 200px;
@@ -19,6 +18,12 @@
   margin: 20px;
   margin-top: 40px;
   padding: 10px;
+}
+
+.about-three {
+  font-size: 22px;
+  padding: 10px;
+  text-align: center;
 }
 
 .caption {
@@ -45,12 +50,16 @@
 }
 
 .logo {
-  padding: 22px;
   padding-right: 60px;
+  padding-top: 20px;
+}
+
+.logo:hover {
+  color: #00FD00;
 }
 
 .logo-one {
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .logo-one:hover {
@@ -60,7 +69,8 @@
 .logo-two {
   color: #A0A0A0;
   font-size: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -87,8 +97,26 @@
   padding-right: 20px;
 }
 
+.social {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.social-one {
+  color: black;
+  display: inline;
+  font-size: 40px;
+  padding: 5px;
+  text-align: center;
+}
+
+.social-one:hover {
+  color: #00FD00;
+}
+
 .sponsor {
   margin: 20px;
+  margin-bottom: 40px;
 }
 
 .stream {
@@ -133,6 +161,8 @@
 .tabs {
   font-size: 18px;
   padding: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .tabs-one:hover {
