@@ -1,9 +1,12 @@
 .about {
   border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
   font-size: 50px;
   margin: 20px;
-  margin-top: 160px;
+  margin-top: 200px;
   padding: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .about-one {
@@ -39,10 +42,6 @@
 
 .footer {
   background-color: black;
-}
-
-.image {
-  margin-bottom: 10px;
 }
 
 .logo {
@@ -86,6 +85,10 @@
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.sponsor {
+  margin: 20px;
 }
 
 .stream {
@@ -146,6 +149,7 @@
   margin-bottom: 40px;
   margin-top: 40px;
   padding: 15px;
+  padding-left: 20px;
 }
 
 .top-one {
