@@ -105,7 +105,7 @@
 .social-one {
   color: black;
   display: inline;
-  font-size: 40px;
+  font-size: 50px;
   padding: 5px;
   text-align: center;
 }
@@ -213,7 +213,7 @@
   font-weight: bold;
   margin-bottom: 40px;
   margin-top: 40px;
-  opacity: .9;
+  opacity: .8;
   padding: 30px;
   text-align: right;
 }
