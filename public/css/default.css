@@ -50,7 +50,8 @@
 }
 
 .logo {
-  padding-right: 60px;
+  padding-bottom: 20px;
+  padding-right: 50px;
   padding-top: 20px;
 }
 
@@ -59,7 +60,7 @@
 }
 
 .logo-one {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .logo-one:hover {
@@ -130,7 +131,7 @@
   background-color: black;
   border: 1px solid black;
   color: #00FD00;
-  opacity: .8;
+  opacity: .9;
 }
 
 .sub-header {
@@ -159,7 +160,7 @@
 }
 
 .tabs {
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px;
   padding-bottom: 20px;
   padding-top: 20px;
