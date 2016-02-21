@@ -1,5 +1,5 @@
 # eSports
-A video game search site for people who want to know where to watch upcoming streams and channels via Twitch
+A video game search site for people who want to search for and know where to watch featured streams/channels via Twitch
 
 Direct link to site: https://power-on.herokuapp.com/
 
